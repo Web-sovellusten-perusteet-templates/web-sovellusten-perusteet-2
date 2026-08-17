@@ -1,0 +1,10 @@
+{
+  "name": "w1l2-css-profiilisivu",
+  "version": "1.0.0",
+  "description": "W1L2 GitHub Classroom -harjoitus: CSS-perusteet",
+  "private": true,
+  "scripts": {
+    "test": "node tests/test_css.js"
+  },
+  "devDependencies": {}
+}

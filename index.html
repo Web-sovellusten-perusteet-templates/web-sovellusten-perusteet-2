@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oma profiilisivu</title>
+
+    <!--
+      TEHTÄVÄ: Linkitä tyylitiedosto tähän.
+      Lisää <link>-elementti tähän alle kun style.css on valmis.
+    -->
+
+  </head>
+  <body>
+
+    <header>
+      <h1>Etunimi Sukunimi</h1>
+      <nav>
+        <ul>
+          <li><a href="#tietoa">Tietoa minusta</a></li>
+          <li><a href="#harrastukset">Harrastukset</a></li>
+          <li><a href="#yhteys">Ota yhteyttä</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+      <section id="tietoa">
+        <h2>Tietoa minusta</h2>
+        <img src="kuva.jpg" alt="Valokuva minusta">
+        <p>
+          Kirjoita tähän lyhyt esittely itsestäsi. Mistä tulet?
+          Mitä opiskelet? Mikä sai sinut kiinnostumaan alasta?
+        </p>
+      </section>
+
+      <section id="harrastukset">
+        <h2>Harrastukseni</h2>
+        <ul>
+          <li>Harrastus 1</li>
+          <li>Harrastus 2</li>
+          <li>Harrastus 3</li>
+        </ul>
+      </section>
+
+      <section id="taidot">
+        <h2>Kurssit ja osaaminen</h2>
+        <table>
+          <caption>Suoritetut kurssit</caption>
+          <thead>
+            <tr>
+              <th scope="col">Kurssi</th>
+              <th scope="col">Arvosana</th>
+              <th scope="col">Vuosi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ohjelmoinnin perusteet</td>
+              <td>4</td>
+              <td>2024</td>
+            </tr>
+            <tr>
+              <td>Tietokannat</td>
+              <td>3</td>
+              <td>2024</td>
+            </tr>
+            <tr>
+              <td>Web-sovellusten perusteet</td>
+              <td>—</td>
+              <td>2025</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="yhteys">
+        <h2>Ota yhteyttä</h2>
+        <form action="/lahetys" method="post">
+
+          <label for="nimi">Nimesi:</label>
+          <input type="text" id="nimi" name="nimi"
+                 placeholder="Etunimi Sukunimi" required>
+
+          <label for="email">Sähköpostiosoitteesi:</label>
+          <input type="email" id="email" name="email"
+                 placeholder="nimi@example.com" required>
+
+          <label for="aihe">Aihe:</label>
+          <select id="aihe" name="aihe">
+            <option value="">Valitse aihe</option>
+            <option value="tyopaikka">Työpaikkatiedustelu</option>
+            <option value="projekti">Projektiyhteistyö</option>
+            <option value="muu">Muu</option>
+          </select>
+
+          <label for="viesti">Viestisi:</label>
+          <textarea id="viesti" name="viesti" rows="4"
+                    placeholder="Kirjoita viestisi..."></textarea>
+
+          <button type="submit">Lähetä viesti</button>
+        </form>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>© <time datetime="2025">2025</time> Etunimi Sukunimi. Tehty Web-sovellusten perusteet -kurssilla.</p>
+    </footer>
+
+  </body>
+</html>
